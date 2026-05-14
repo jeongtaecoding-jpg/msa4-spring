@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 // application.yml 파일 자체가 8080을 지정하는 건 아니고,
 // 스프링 부트가 기본값(default)으로 8080을 사용하는 것.
+// 다른 포트를 쓰고 싶으면 application.yml에 들어가서 직접 설정하면 됨
 // 어떤 주소가 배정되었는지는 콘솔에 port XXXX를 보면 알 수 있음.
 
 @RestController
