@@ -13,7 +13,7 @@ public class ValidationController {
     @PostMapping("/validation")
     public String validation(
            @Valid @ModelAttribute ValidationRequest validationRequest
-            ) {
+    ) {
         return String.format(
                 "Email: %s, pw: %s, age: %d, name: %s"
                 , validationRequest.email()

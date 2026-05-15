@@ -3,7 +3,7 @@ package com.msa4spring.requests;
 import jakarta.validation.constraints.*;
 
 public record ValidationRequest(
-        @NotNull(message = "이메일 필수")
+        @NotBlank(message = "이메일 필수")
         String email,
 
         @NotBlank(message = "비밀번호 필수")
